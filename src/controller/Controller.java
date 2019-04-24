@@ -1,10 +1,15 @@
 package controller;
-import java.util.Scanner;
+import view.Frame;
 public class Controller
 {
+private Frame appFrame;
 public void start()
 {
 
+}
+public Controller()
+{
+	appFrame = new Frame(this);
 }
 public long factorialGenerate(long n)
 {

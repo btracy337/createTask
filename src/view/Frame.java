@@ -18,7 +18,7 @@ public Frame(Controller controller)
 public void setupFrame()
 {
 	this.setContentPane(guiPanel);
-	this.setSize(800,600);
+	this.setSize(1000,800);
 	this.setTitle("Permutations and Combinations");
 	this.setResizable(false);
 	this.setVisible(true);
