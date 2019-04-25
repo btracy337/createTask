@@ -38,6 +38,19 @@ public class Panel extends JPanel
 		CombinationN = new JTextField("0");
 		CombinationC = new JTextField("0");
 		appLayout = new SpringLayout();
+		appLayout.putConstraint(SpringLayout.NORTH, PermutationC, 6, SpringLayout.SOUTH, Permutation);
+		appLayout.putConstraint(SpringLayout.NORTH, permutationAnswer, 5, SpringLayout.NORTH, PermutationN);
+		appLayout.putConstraint(SpringLayout.WEST, permutationAnswer, 0, SpringLayout.WEST, combinationAnswer);
+		appLayout.putConstraint(SpringLayout.NORTH, CombinationC, 6, SpringLayout.SOUTH, Combination);
+		appLayout.putConstraint(SpringLayout.NORTH, combinationAnswer, 5, SpringLayout.NORTH, CombinationN);
+		appLayout.putConstraint(SpringLayout.EAST, combinationAnswer, -70, SpringLayout.EAST, this);
+		appLayout.putConstraint(SpringLayout.EAST, PermutationC, 0, SpringLayout.EAST, Calculate);
+		appLayout.putConstraint(SpringLayout.EAST, CombinationC, -1, SpringLayout.EAST, Calculate);
+		appLayout.putConstraint(SpringLayout.EAST, CombinationN, -1, SpringLayout.EAST, PermutationN);
+		appLayout.putConstraint(SpringLayout.WEST, CombinationC, 138, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.WEST, CombinationN, 87, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.WEST, PermutationC, 12, SpringLayout.EAST, PermutationN);
+		appLayout.putConstraint(SpringLayout.EAST, PermutationN, 127, SpringLayout.WEST, this);
 
 		setupPanel();
 		setupLayout();
@@ -65,25 +78,11 @@ public class Panel extends JPanel
 		appLayout.putConstraint(SpringLayout.SOUTH, Combination, -59, SpringLayout.NORTH, Permutation);
 		appLayout.putConstraint(SpringLayout.WEST, Permutation, 0, SpringLayout.WEST, Combination);
 		appLayout.putConstraint(SpringLayout.WEST, PermutationN, 88, SpringLayout.WEST, this);
-		appLayout.putConstraint(SpringLayout.NORTH, CombinationC, 6, SpringLayout.SOUTH, Combination);
-		appLayout.putConstraint(SpringLayout.WEST, CombinationC, 0, SpringLayout.WEST, PermutationC);
-		appLayout.putConstraint(SpringLayout.EAST, CombinationC, -15, SpringLayout.EAST, Calculate);
-		appLayout.putConstraint(SpringLayout.WEST, CombinationN, 0, SpringLayout.WEST, Permutation);
-		appLayout.putConstraint(SpringLayout.EAST, CombinationN, -1, SpringLayout.EAST, PermutationN);
-		appLayout.putConstraint(SpringLayout.WEST, PermutationC, 25, SpringLayout.EAST, PermutationN);
-		appLayout.putConstraint(SpringLayout.EAST, PermutationC, -287, SpringLayout.EAST, this);
-		appLayout.putConstraint(SpringLayout.NORTH, PermutationC, 6, SpringLayout.SOUTH, Permutation);
-		appLayout.putConstraint(SpringLayout.SOUTH, PermutationC, 178, SpringLayout.NORTH, this);
-		appLayout.putConstraint(SpringLayout.EAST, PermutationN, 113, SpringLayout.WEST, this);
 		appLayout.putConstraint(SpringLayout.NORTH, PermutationN, 6, SpringLayout.SOUTH, Permutation);
 		appLayout.putConstraint(SpringLayout.SOUTH, PermutationN, -83, SpringLayout.NORTH, Calculate);
 		appLayout.putConstraint(SpringLayout.SOUTH, Permutation, -154, SpringLayout.SOUTH, this);
 		appLayout.putConstraint(SpringLayout.WEST, Calculate, 76, SpringLayout.WEST, this);
 		appLayout.putConstraint(SpringLayout.SOUTH, Calculate, -10, SpringLayout.SOUTH, this);
-		appLayout.putConstraint(SpringLayout.NORTH, combinationAnswer, 5, SpringLayout.NORTH, CombinationN);
-		appLayout.putConstraint(SpringLayout.WEST, combinationAnswer, 0, SpringLayout.WEST, permutationAnswer);
-		appLayout.putConstraint(SpringLayout.NORTH, permutationAnswer, 5, SpringLayout.NORTH, PermutationN);
-		appLayout.putConstraint(SpringLayout.EAST, permutationAnswer, -49, SpringLayout.EAST, this);
 
 	}
 
