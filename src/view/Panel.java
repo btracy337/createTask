@@ -106,9 +106,11 @@ public class Panel extends JPanel
 					permutationAnswer.setText("Please enter a number less than 15 for n and r");
 				}
 				else
+					//startAbstraction
 				{
 					permutationAnswer.setText(Long.toString(appController.Permutations(permutationValueN, permutationValueC)));
 				}
+				//endAbstraction
 				if (combinationValueN > 15 || combinationValueC > 15)
 				{
 					combinationAnswer.setText("Please enter a number less than 15 for n and r");

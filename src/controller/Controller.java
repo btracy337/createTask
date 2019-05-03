@@ -11,6 +11,7 @@ public Controller()
 {
 	appFrame = new Frame(this);
 }
+
 public long factorialGenerate(long n)
 {
 	long factorial = 1;
@@ -22,7 +23,9 @@ public long factorialGenerate(long n)
 }
 public long Permutations(long n, long r)
 {
+	//startAlgorithm
 	long permutations = (factorialGenerate(n)) / (factorialGenerate(n-r));
+	//endAlgorithm
 	return permutations;
 }
 public long Combinations(long n, long r)
@@ -30,6 +33,7 @@ public long Combinations(long n, long r)
 	long combinations = (factorialGenerate(n)) / ((factorialGenerate(r)) * (factorialGenerate(n-r)));
 	return combinations;
 }
+
 public long permutationsWithRepition(long n, long r)
 {
 	long permutationsWithRepition = (long)Math.pow(n,r);
